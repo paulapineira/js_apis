@@ -12,7 +12,7 @@ const handleError = (error) => {
     document.querySelector('h1').style.display = 'none';
     document.querySelector('.card').style.display = 'none';
     document.querySelector('.error').style.display = 'flex';
-    document.querySelector('.errorMessage').textContent = 'Lo siento, hubo un error: ' + error.message;
+    document.querySelector('.errorMessage').textContent = 'Lo siento, hubo un error';
     console.error(error);
 };
 
