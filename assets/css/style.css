@@ -1,0 +1,166 @@
+body{
+    background: black;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card{
+    background: #666565;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 35px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.buscar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+#clpCantidad{
+    width: 368px;
+    height: 50px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    padding: 5x;
+    text-align: center;
+}
+
+#currencies {
+  width: 380px;
+  height: 50px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+#buscar{
+    border-radius: 5px;
+    color: white;
+    background:rgb(12, 142, 248);
+    border:none;
+    width: 380px;
+    height: 50px;
+    font-size: x-large;
+    padding: 5px;
+    text-align: center;
+
+}
+#answer{
+    font-size: x-large;
+}
+#valueOfDay{
+    font-size: small;
+}
+.chart{
+    display: none;
+    background-color: white;
+}
+#myChart{
+    width: 500px;
+    height: 300px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+.error{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+/*LOADER*/
+.animatedLoader {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-top: 4px solid red;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .animatedLoader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-left: 4px solid blue;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .modal-content {
+    position: relative;
+    text-align: center;
+    font-size:larger;
+    color: #ffffff;
+    background-color: #2d2d2d;
+    margin: 15% auto;
+    padding: 20px;
+    border: 3px solid #2d2d2d;
+    border-radius: 5px;
+    width: 30%;
+  }
+  #OK{
+    background: red;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 2%;
+    width: 40%;
+  }
+
+  h1::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #1e1047;
+    margin-bottom: 10px;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #1e1047;
+  margin-top: 10px;
+}
+

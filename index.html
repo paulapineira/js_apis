@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Coversor de monedas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de monedas Nacional</h1>
+        <div class="card">
+            <div class="clp">
+                <h2>Pesos CLP</h2>
+                <input type="number" name="clpCantidad" id="clpCantidad" placeholder="Ingrese el monto en CLP">
+            </div>
+            <div class="buscar">
+                <label for="currencies">Moneda a convertir:</label>
+                <select name="currencies" id="currencies">
+                </select>
+                <input type="button" value="Buscar" id="buscar">
+                 <!-- Modal-->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                      <p>Asegúrese de ingresar un monto en pesos para convertirlo a la moneda deseada y seleccionar una divisa.</p>
+                      <input type="button" value="OK" id="OK">
+                    </div>
+                </div>
+            </div>
+            <div class="loader">
+                <span class="animatedLoader"></span>
+                <p id="answer">...</p>
+                <p id="valueOfDay" ></p>
+            </div>
+            <div class="chart">
+                <canvas id="myChart">
+                </canvas>
+            </div>
+        </div>
+        <div class="error">
+            <img src="./assets/img/errorimg.png" alt=" img error">
+            <p class="errorMessage">mensaje de error</p>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
